@@ -33,6 +33,7 @@ Digitando:
 `
 ?meteo
 `
+
 potete avereuna descrizione dei dati disponibili.
 
 Per avere informazioni su cosa sia un `tibble` in R [consultare questa pagina](https://tibble.tidyverse.org/)
