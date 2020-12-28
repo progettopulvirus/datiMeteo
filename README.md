@@ -15,6 +15,7 @@ Quindi dallaconsole di R digitare:
 `
 remotes::install_github("pulvirus/datiMeteo")
 `
+## Uso del pacchetto `datiMeteo`
 
 Una volta installato potete caricare il pacchetto `datiMeteo`:
 
