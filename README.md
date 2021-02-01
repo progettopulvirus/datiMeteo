@@ -13,7 +13,7 @@ install.packages("remotes")
 Quindi dallaconsole di R digitare:
 
 `
-remotes::install_github("pulvirus/datiMeteo")
+remotes::install_github("progettopulvirus/datiMeteo")
 `
 ## Uso del pacchetto `datiMeteo`
 
