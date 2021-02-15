@@ -5,7 +5,7 @@
 \alias{meteo}
 \title{Un tibble con i dati dei parametri meteorologici dei punti stazione}
 \format{
-Un tibble con 24 colonne e 2250900 osservazioni
+Un tibble con 23 colonne e 2250900 osservazioni
 \describe{
 \item{station_code}{Codice stazione}
 \item{station_eu_code}{Codice europeo della stazione: da utilizzare per il merge con i dati degli inquinanti}
@@ -26,7 +26,6 @@ Un tibble con 24 colonne e 2250900 osservazioni
 \item{pblmax}{Planet boundary layer, massimo giornaliero}
 \item{coordx}{X, epsg: 32632}
 \item{coordy}{Y, epsg: 32632}
-\item{altitude}{Quota del punto stazione in metri. Potrebbe contenere NA}
 \item{altitudedem}{Quota del punto stazione in metri estratta dal DEM GLOBE.}
 \item{wdir}{Direzione del vento in gradi. Dato ricalcolato da Guido.}
 \item{wspeed}{Velocita' del vento in m/s. Dato ricalcolato da Guido.}
@@ -38,11 +37,12 @@ meteo
 }
 \description{
 Dati meteo associati ai punti stazione. Si tratta dei dati estratti da netCDF delle rianalisi ERA5
-Il dataset non contiene dati mancanti.
+Il dataset non contiene dati mancanti nei parametri meteoclimatici.
 }
 \note{
 I dati del vento sono stati ricalcolati da Guido mediante il pacchetto Rsenal. Altri pacchetti testati per ricalcolare il
 vento: kehra (sembra avere unbug che produce un errore), rWind (sembra non fornire sempre i risultati che si otterrebbero utilizzando
-la formula fornita dall'ECMWF.)
+la formula fornita dall'ECMWF.). I dati di altitudine estratti dal dem sono stati ricalcolati da Guido (15 febbraio 2021) perche' quelli
+forniti dai colleghi contenevano NA.
 }
 \keyword{datasets}
