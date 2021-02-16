@@ -1,6 +1,6 @@
 Package: datiMeteo
 Title: Dati meteo/meteo standardizzati per progetto Pulvirus
-Version: 1.0.0.0
+Version: 1.0.0.1
 Authors@R: 
     person(given = "Guido",
            family = "Fioravanti",

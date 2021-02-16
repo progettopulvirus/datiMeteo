@@ -5,7 +5,7 @@ usethis::use_data(meteo_standardizzati, overwrite = TRUE)
 
 
 meteo %>%
-  dplyr::select(-station_code,-station_eu_code,-date)->temp
+  dplyr::select(-station_code,-station_eu_code,-date,-coordx,-coordy)->temp
 
 purrr::map_dfc(temp,.f=~(.x-mean(.x,na.rm=TRUE))/sd(.x,na.rm = TRUE) )->ntemp
 
