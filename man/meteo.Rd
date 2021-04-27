@@ -27,7 +27,7 @@ Un tibble con 23 colonne e 2250900 osservazioni
 \item{coordx}{X, epsg: 32632}
 \item{coordy}{Y, epsg: 32632}
 \item{altitudedem}{Quota del punto stazione in metri estratta dal DEM GLOBE.}
-\item{wdir}{Direzione del vento in gradi. Dato ricalcolato da Guido.}
+\item{wdir}{Direzione del vento in gradi. Dato ricalcolato da Guido. Questa variabile e' stata spostata in stazioni nel pacchetto stazioniMonitoraggio}
 \item{wspeed}{Velocita' del vento in m/s. Dato ricalcolato da Guido.}
 \item{wspeed}{Velocita' del vento del giorno precedente in m/s. Dato ricalcolato da Guido.}
 }
